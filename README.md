@@ -51,9 +51,9 @@ from torch_geometric.data.data import subgraph
 
 
 
-## Generate novel structures
+## Delete on your lead compounds! 
 
-I have provided an example to suggest new structures using adbr1 example, use this command to generate 3D molecules given the protein and lead fragment! The pretrained checkpoint could be downloaded [here](https://doi.org/10.5281/zenodo.7985201). (More pre-trained ckpt can be found in our updated Protocol Section)
+I have provided an example to suggest new structures using adbr1 example, use this command to generate 3D molecules given the protein and lead fragment! The pretrained checkpoint could be downloaded [here](https://doi.org/10.5281/zenodo.7985201). (More pre-trained ckpt can be found in our updated [Protocol Section](https://github.com/OdinZhang/delete-protocol))
 
 ```python
 python -u delete.py --surf_path ./example/adrb1/adrb_pocket_8.0.ply --frag_path ./example/adrb1/2VT4_frag.sdf --check_point ./checkpoint/ckpt/delete.pt --outdir ./outputs --suboutdir adrb1
@@ -92,7 +92,7 @@ Here is the [Protocol](https://github.com/HaotianZhangAI4Science/delete-protocol
 
 There are two datasets used for training, one is CrossDock2020, another is BindingMoad. 
 
-If you want to process from scratch, please refer to the ./data/README.MD
+If you want to process from scratch, please refer to the ./process_your_data.py
 
 Here, we provided the processed file in lmdb format. 
 
